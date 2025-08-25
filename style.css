@@ -1,0 +1,104 @@
+/* LED background styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.led-bg {
+  background: linear-gradient(135deg, #0f0f0f 10%, #1a1a1a 90%);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: glow 2s infinite alternate;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: #ccc;
+}
+
+.beat-catalog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.beat-card {
+  width: 300px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #111;
+  box-shadow: 0 0 15px #444;
+  text-align: center;
+}
+
+.beat-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.beat-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.platinum {
+  border: 2px solid #c0c0c0;
+  color: #e5e4e2;
+  box-shadow: 0 0 20px #c0c0c0;
+}
+
+.royal {
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  box-shadow: 0 0 20px #ffd700;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Glowing text effect */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #999;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #999;
+  }
+}
